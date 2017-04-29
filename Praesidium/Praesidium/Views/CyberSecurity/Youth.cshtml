@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Youth";
+}
+
+<div class="container-fluid" id="photo_cont" style="margin-bottom:3%;">
+    <div class="row">
+        <div class="col-md-12">
+            <figure class="effect-caged img-responsive">
+                <img src="~/Content/Images/cyber_security_1.png" style="width:100%;max-height:330px;" />
+            </figure>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <h1 id="headers" class="align-left">Cyber Security for Youth</h1>
+        <p id="p_text">
+            This is a page where youth (thats you!) can learn about being safe online! One of the most important things to make sure you are taking the right steps to
+            be safe online. There are some major no-nos that you can avoid by following a few safety rules while using the computer. These rules along with some quick safety tips
+            can help make sure you and your friends stay safe.
+        </p>
+    
+
+        
+
+    </div>
+    <div class="col-md-4 align-center " id="borders" style="min-height:150px;">
+        <h3 id="headers_borders">Quick Tips!</h3>
+        <ul class="align-left" id="p_textborders">
+            <li>Always tell your parents about people you don't know trying to talk to you</li>
+            <li>Never talk to strangers online</li>
+            <li>Only go to websites your parents approve</li>
+           <center>@Html.ActionLink("Youth Quiz", "Quiz", new { quizId = 1 }, new { @class = "btn btn-info", @title = "" })  </center>
+            
+        </ul>
+    </div>
+</div>
+@{ Html.RenderAction("FileList", new { id = 14 }); }

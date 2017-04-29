@@ -1,0 +1,112 @@
+﻿
+@{
+    ViewBag.Title = "Quiz";
+    int? quizId = ViewBag.QuizId;
+}
+
+<div class="container-fluid img-responsive" id="photo_cont" style="margin-bottom:3%;">
+    <div class="row">
+        <div class="col-md-12">
+
+            <img src="~/Content/Images/quiz.jpg" class="img-responsive" style="width:100%;max-height:330px;" />
+
+        </div>
+    </div>
+</div>
+    <h1 id="headers"> Quizzes</h1>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <p class="p_text">
+                These are quizzes provided to test your knowledge of cyber security. These quizzes are specificially designed for the demographics we have listed
+                under the cyber security tab. If you aren't sure which demographic you fall under, please refer to the each page for more information, good luck!
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            @{
+                switch (quizId)
+                {
+                    case 1:
+                        <div class="quizz-container" data-width="100%" data-iframe-title="QUIZ: Cyber Security: Youth" data-height="auto" data-quiz="380016"></div>
+                        <script src="//dcc4iyjchzom0.cloudfront.net/widget/loader.js" async></script>
+
+                        break;
+                    case 2:
+                        <div class="quizz-container" id="borders" data-width="100%" data-iframe-title="QUIZ: Cyber Security: Teens" data-height="auto" data-quiz="380128"></div>
+                        <script src="//dcc4iyjchzom0.cloudfront.net/widget/loader.js" async></script>
+                        break;
+                    case 3:
+                        <div class="quizz-container" id="borders" data-width="100%" data-iframe-title="QUIZ: Cyber Security:Law Enforcement" data-height="auto" data-quiz="380145"></div>
+                        <script src="//dcc4iyjchzom0.cloudfront.net/widget/loader.js" async></script>
+                        break;
+                    default:
+                        <div class="row">
+                            <div class="col-md-3 panel" id="borders">
+
+                                <h3 id="headers_borders">
+                                    Quiz: Cyber Security: <br />Youth
+                                </h3>
+                                @Html.ActionLink("Take the quiz now!", "Quiz", new { quizId = 1 }, new { @class = "btn btn-info", @title = "", @style = "margin-left: 50px;margin-bottom:10px; " })
+
+                            </div>
+                            <div class="col-md-1"></div>
+
+                            <div class="col-md-3 panel" id="borders">
+                                <h3 id="headers_borders">
+                                    Quiz: Cyber Security: <br />Teens
+                                </h3>
+                                @Html.ActionLink("Take the quiz now!", "Quiz", new { quizId = 2 }, new { @class = "btn btn-info", @title = "", @style = "margin-left: 50px;margin-bottom:10px; " })
+                            </div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-3 panel" id="borders">
+                                <h3 id="headers_borders">
+                                    Quiz: Cyber Security: <br />Law Enforcement
+                                </h3>
+                                @Html.ActionLink("Take the quiz now!", "Quiz", new { quizId = 3 }, new { @class = "btn btn-info", @title = "", @style = "margin-left: 50px;margin-bottom:10px;" })
+                            </div>
+                        </div>
+                        break;
+                }
+            }
+        </div>
+    </div>
+    <h1 id="headers">
+        <div style="text-align: center;" >Games:</div></h1>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <p class="p_text">
+                <div style="text-align: center;" > <a href="http://www.digizen.org/resources/digizen-game.aspx"> Digizen Org</a></div>
+
+            </p>
+            <p class="p_text">
+                <div style="text-align: center;" > <a href="http://www.carnegiecyberacademy.com/missions.html"> Carnegie Cyber Academy</a></div>
+            </p>
+            <p class="p_text">
+                <div style="text-align: center;" > <a href="https://www.consumer.ftc.gov/media/game-0013-case-cyber-criminal"> Consumer Information(Cyber Criminal)</a></div>
+            </p>
+            <p class="p_text">
+                <div style="text-align: center;" ><a href="https://safeandsecureonline.org/children/"> Safe and Secure Online(Cyber Safety Adventures)</a></div>
+            </p>
+            <p class="p_text">
+                <div style="text-align: center;" ><a href="https://www.consumer.ftc.gov/media/game-0008-mission-laptop-security"> Consumer Information(Laptop Security)</a></div>
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

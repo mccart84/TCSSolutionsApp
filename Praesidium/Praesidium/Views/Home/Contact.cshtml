@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<script src="~/Scripts/analytics.js"></script>
+<!-- Jumbotron -->
+
+<div class="container">
+    <div class="jumbotron" id="Contact_jumbo">
+        <h1>Reach Out!</h1>
+        <p> Contact your local Authorities</p>
+        <p><a class="btn btn-info btn-lg">Contact now</a></p>
+    </div>
+
+</div>
+
+<!-- Created container div to create columns for content-->
+<!-- Moved header within left-most column -->
+
+
+<div class="row">
+    <div class="col-lg-6" id="borders" style="text-shadow: grey 0.1em 0.1em 0.2em;">
+        <address>
+            <h2 style="text-align:center;">Additional Resources</h2><br />
+            <!--Possibly update section to pull links from content linked to ouside sites from database.-->
+
+            <p style="text-align:left; margin-left:5%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a href="#" style="margin-left:5%;" class="btn btn-success bt-lg">Check it out</a><br /><br />
+            <p style="text-align:left; margin-left:5%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a href="#" style="margin-left:5%;" class="btn btn-danger bt-lg">Check it out</a><br /><br />
+            <p style="text-align:left; margin-left:5%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a href="#" style="margin-left:5%;" class="btn btn-primary bt-lg">Check it out</a>
+
+        </address>
+    </div>
+
+  
+
+    <div class="col-lg-6" id="borders" style="text-shadow: grey 0.1em 0.1em 0.2em;padding:10px;">
+        <form role="form">
+            <h2 style="text-align:center;">Report Something</h2>
+
+            <div class="form-group" style="margin-left:8%;">
+                <label for="name">Your Name</label>
+                <input id="text_entry" name="name" type="text" class="form-control" required>
+
+            </div>
+
+            <div class="form-group" style="margin-left:8%;">
+                <label for="phone">Primary Phone</label>
+                <input id="text_entry" name="phone" type="tel" class="form-control" size="35" required>
+
+            </div>
+            <div class="form-group" style="margin-left:8%;">
+
+                <label for="message">Message</label>
+                <textarea id="message_entry" name="phone" class="form-control" required></textarea>
+
+            </div>
+        </form>
+        <a class="btn btn-success btn-lg" style="padding:10px;margin-top:10px;margin-bottom:10px;clear:both;margin-left:46%;">Submit</a>
+    </div>
+</div>

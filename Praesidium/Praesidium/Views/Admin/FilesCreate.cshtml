@@ -1,0 +1,133 @@
+﻿@using Praesidium.Models
+@model Praesidium.Data_Models.Admin.ShFile
+
+@{
+    ViewBag.Title = "Files Upload";
+}
+
+
+@using (Html.BeginForm("FilesCreate", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <script src="~/scripts/tinymce/tinymce.min.js"></script>
+    <!-- Script to wire up your TinyMCE editor -->
+    <script type="text/javascript">
+        tinyMCE.init({
+            // General options
+            mode: "textareas",
+            theme: "modern",
+            // Theme options
+            theme_advanced_buttons1: "save,|,bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,|,styleselect,formatselect,fontselect,fontsizeselect",
+            theme_advanced_buttons2: "cut,copy,paste,pastetext,pasteword,|,search,replace,|,bullist,numlist,|,outdent,indent,blockquote,|,undo,redo,|,link,unlink,anchor,image,cleanup,help,code,|,insertdate,inserttime,preview,|,forecolor,backcolor",
+            theme_advanced_buttons3: "tablecontrols,|,hr,removeformat,visualaid,|,sub,sup,|,charmap,emotions,iespell,media,advhr,|,print,|,ltr,rtl,|,fullscreen",
+            theme_advanced_buttons4: "insertlayer,moveforward,movebackward,absolute,|,styleprops,spellchecker,|,cite,abbr,acronym,del,ins,attribs,|,visualchars,nonbreaking,template,blockquote,pagebreak,|,insertfile,insertimage",
+            theme_advanced_toolbar_location: "top",
+            theme_advanced_toolbar_align: "left",
+            theme_advanced_statusbar_location: "bottom",
+            theme_advanced_resizing: true,
+            selector: 'textarea',
+            encoding: 'xml'
+        });
+    </script>
+        <script type="text/javascript">
+            function showGroup(value) {
+                if (value == 2) {
+                    $('.2').show();
+                    $('.3').hide();
+                    $('.3').prop('checked', false);
+                }
+                else if (value == 3) {
+                    $('.3').show();
+                    $('.2').hide();
+                    $('.2').prop('checked', false);
+                }
+                else {
+                    $('.3').hide();
+                    $('.2').hide();
+                    $('.cs').prop('checked', false);
+                    $('.tr').prop('checked', false);
+                }
+            }
+        </script>
+
+        <div class="form-horizontal">
+
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.Title, new { htmlAttributes = new { @class = "form-control"}, autofocus="autofocus"})
+                    @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.Label("File", new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <input type="file" id="upload" name="upload" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.FkShSySection, "Section", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("Sections", null, "Please select", htmlAttributes: new { @class = "form-control", @onchange = "showGroup(this.value)" })
+                    @Html.ValidationMessageFor(model => model.FkShSySection, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2">Pages</label>
+                <div class="col-md-10">
+                    @foreach (var item in Model.Sections)
+                    {
+                        <div class="@item.FkNavId" style="display: none;">
+                            <input type="checkbox" id="@item.Id" value="@item.Id" name="SectionList" />
+                            <label for="@item.Id">@item.Name</label>
+                            <br />
+                        </div>
+                    }
+
+                    @*@for (var i = 0; i < ViewBag.cblist.Count(); i++)
+                {
+                        <div class="@ViewBag.cblist[i].FkNavId }" style="display: none;">
+                            @Html.HiddenFor(ViewBag.cblist[i].Id)
+                            @Html.CheckBoxFor(it => it.Cblist[i].Checked, htmlAttributes: new { @id = "cb" + Model.Cblist[i].Id, @class = Model.Cblist[i].FkNavId })
+                            @Html.DisplayFor(it => it.Cblist[i].Name)
+                            <br />
+                        </div>
+                    }*@
+
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            @*<div class="form-group">
+                @Html.LabelFor(model => model.UploadedBy, "UploadedBy", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("UploadedBy", (SelectList)ViewBag.users, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.UploadedBy, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Submit" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Files")
+</div>

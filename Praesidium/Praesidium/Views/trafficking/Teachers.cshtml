@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "Teachers";
+}
+
+
+<div class="container-fluid" id="photo_cont" style="margin-bottom:3%;">
+    <div class="row">
+        <div class="col-md-12">
+
+            <figure class="effect-caged">
+                <img src="~/Content/Images/teacher.png" g" style="width:100%;max-height:330px;" />
+                <figcaption>
+                    <h1><span>Teachers</span></h1>
+                </figcaption>
+            </figure>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Carousel -->
+
+<div class="row">
+
+    <div class="col-xs-12">
+
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id=" headers">Teachers</h1>
+                <p class="lead" id="p_text">
+                    Teachers are some of the most influential people on today’s youth. In the early parts of their life, kids spend a majority of their time at
+                    school. These young kids are also the most vulnerable to human trafficking
+                    because they do not know any better and they physically cannot do much against an attacker. In order to educate our youth, 
+                    it is important for teachers to be fully aware of the dangers of human trafficking 
+                    and the signs of a possible attack. This page contains information and resources that
+                    will give content to our educators so that they can learn and pass on the information to their students.
+                </p>
+            </div>
+            <div class="col-md-4 align-center " id="borders" style="min-height:150px;">
+                <h3 id="headers_borders">Teacher Page Links</h3>
+                <ul class="align-left" id="p_textborders">
+                    <li><A HREF="https://humaneeducation.org/blog/2012/resources-for-teaching-about-human-trafficking/">Human Education Org</A></li>
+                    <li><A HREF="https://crees.ku.edu/sites/crees.ku.edu/files/docs/Trafficking%20Resources%20for%20Educators.pdf">Resources For Educators</A></li>
+                    <li><A HREF="http://www.tolerance.org/toolkit/human-trafficking">Tolerance Org</A></li>
+                    <li><a href="http://www.fdfi.org/human-trafficking-education-curriculum.html"> FDFI Org</a></li>
+                    <li><a href="http://www.endslaverynow.org/blog/articles/anti-trafficking-education-in-high-schools"> End Slavery Now Org</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+@{ Html.RenderAction("FileList", new { id = 9 }); }
+

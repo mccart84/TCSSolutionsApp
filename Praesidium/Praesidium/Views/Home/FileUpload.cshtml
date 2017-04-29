@@ -1,0 +1,107 @@
+﻿
+@{
+    ViewBag.Title = "FileUpload";
+}
+
+<h2>File Uploader</h2>
+
+<form>
+    <div class="row">
+        <div class="form-group col-md-4">
+            <label for="ListOfFiles">Select a File</label>
+            <select class="form-control" id="ListOfFiles">
+                <option>File 1</option>
+                <option>File 2</option>
+                <option>File 3</option>
+                <option>File 4</option>
+            </select>
+        </div>
+
+        <div class="col-md-4">
+            <h1></h1>
+            <button class="btn-primary">Upload File</button>
+        </div>     
+    </div>
+
+    <div class="row">
+        <div class="form-group col-md-4">
+            <label for="ListOfImages">Select an Image</label>
+            <select class="form-control" id="ListOfImages">
+                <option>Image 1</option>
+                <option>Image 2</option>
+                <option>Image 3</option>
+                <option>Image 4</option>
+            </select>
+        </div>
+
+        <div class="col-md-4">
+            <h1></h1>
+            <button class="btn-primary">Upload Image</button>
+        </div>
+    </div>
+
+    <div class="form-group">
+            <label for="FileDescription">Description</label>
+            <textarea class="form-control" id="FileDescription"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>Tags/Categories</label>
+        <div class="row">
+            <div class="col-md-2">
+                <select class="form-control" id="TagList">
+                    <option>Tag 1</option>
+                    <option>Tag 2</option>
+                    <option>Tag 3</option>
+                    <option>Tag 4</option>
+                </select>
+            </div>
+
+            <div class="col-md-2">
+                <select class="form-control" id="TagList1">
+                    <option>Tag 1</option>
+                    <option>Tag 2</option>
+                    <option>Tag 3</option>
+                    <option>Tag 4</option>
+                </select>
+            </div>
+
+            <div class="col-md-2">
+                <select class="form-control" id="TagList2">
+                    <option>Tag 1</option>
+                    <option>Tag 2</option>
+                    <option>Tag 3</option>
+                    <option>Tag 4</option>
+                </select>
+            </div>
+
+            <div class="col-md-2">
+                <select class="form-control" id="TagList3">
+                    <option>Tag 1</option>
+                    <option>Tag 2</option>
+                    <option>Tag 3</option>
+                    <option>Tag 4</option>
+                </select>
+            </div>
+
+            <div class="col-md-2">
+                <select class="form-control" id="TagList4">
+                    <option>Tag 1</option>
+                    <option>Tag 2</option>
+                    <option>Tag 3</option>
+                    <option>Tag 4</option>
+                </select>
+            </div>
+        </div>  
+    </div>
+ 
+    <div class="row" style="margin-top:50px">
+        <div class="col-md-1">
+            <button class="btn-primary">Cancel</button>
+        </div> 
+        <div class="col-md-1">
+            <button type="submit" class="btn-primary">Submit</button>
+        </div> 
+    </div>
+</form>
+

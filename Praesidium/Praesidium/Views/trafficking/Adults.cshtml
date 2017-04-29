@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Adults";
+}
+
+<div class="container-fluid" id="photo_cont" style="margin-bottom:3%;">
+    <div class="row">
+        <div class="col-md-12">
+
+            <figure class="effect-caged">
+
+
+                <img src="~/Content/Images/adults.png" style="width:100%;max-height:330px;" />
+                <figcaption>
+                    <h1> <span>Adults</span></h1>
+                </figcaption>
+            </figure>
+
+        </div>
+
+    </div>
+</div>
+<!-- Carousel -->
+
+<div class="row">
+
+    <div class="col-xs-12">
+
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="headers">Adults</h1>
+                <p class="lead" id="p_text">
+                    This page is targeted towards adults to teach them about the dangers of human trafficking and the signs to help recognize when trafficking may be taking place.
+                    It is meant to help inform them so that they can take appropriate actions to keep their children, and others, safe.
+                </p>
+            </div>
+            <div class="col-md-4 align-center" id="borders" style="min-height: 150px;">
+                <h3 id="headers_borders">Adult Page Links</h3>
+                <ul class="align-left" id="p_textborders">
+                    <li><a href="http://www.ncadv.org/">NCADV</a></li>
+                    <li><a href="http://www.humantraffickinged.com/">HumanTraffickinged.com</a></li>
+                    <li><a href="https://polarisproject.org/national-human-trafficking-hotline?gclid=Cj0KEQjw0IvIBRDF0Yzq4qGE4IwBEiQATMQlMRkKoi9k3eDgVMwUcaNp-Kq4DSlphsr4cMv3dyOW5egaArin8P8HAQ">Polaris Project</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+@{ Html.RenderAction("FileList", new {id = 6}); }

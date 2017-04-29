@@ -1,0 +1,714 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="AdminModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ShFile">
+          <Key>
+            <PropertyRef Name="RecId" />
+          </Key>
+          <Property Name="RecId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FileName" Type="varchar(max)" Nullable="false" />
+          <Property Name="FkShSySection" Type="int" />
+          <Property Name="Description" Type="varchar(max)" />
+          <Property Name="UploadedBy" Type="int" />
+          <Property Name="ModifiedBy" Type="int" />
+          <Property Name="DateUploaded" Type="date" />
+          <Property Name="DateModified" Type="date" />
+          <Property Name="FileStore" Type="varbinary(max)" Nullable="false" />
+          <Property Name="ContentType" Type="varchar(max)" Nullable="false" />
+          <Property Name="Title" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DownloadCount" Type="int" />
+          <Property Name="ViewCount" Type="int" />
+          <Property Name="FileExtension" Type="nvarchar" MaxLength="8" />
+        </EntityType>
+        <EntityType Name="ShFileKeyword">
+          <Key>
+            <PropertyRef Name="RecId" />
+          </Key>
+          <Property Name="RecId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FkShFile" Type="int" />
+          <Property Name="Keyword" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="ShRfUserTypeAccess">
+          <Key>
+            <PropertyRef Name="RecId" />
+          </Key>
+          <Property Name="RecId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FkShUserType" Type="int" Nullable="false" />
+          <Property Name="FkShSySecurityItem" Type="int" Nullable="false" />
+          <Property Name="FkShSyPermissionLevel" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ShSyNavigationItem">
+          <Key>
+            <PropertyRef Name="RecId" />
+          </Key>
+          <Property Name="RecId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Controller" Type="varchar(max)" Nullable="false" />
+          <Property Name="Action" Type="varchar(max)" Nullable="false" />
+          <Property Name="DisplayText" Type="varchar(max)" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="FkShSySection" Type="int" Nullable="false" />
+          <Property Name="SortOrder" Type="int" Nullable="false" />
+          <Property Name="ParentId" Type="int" />
+          <Property Name="Description" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="ShSyPermissionLevels">
+          <Key>
+            <PropertyRef Name="RecId" />
+          </Key>
+          <Property Name="RecId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PermissionLevel" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ShSySection">
+          <Key>
+            <PropertyRef Name="RecId" />
+          </Key>
+          <Property Name="RecId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar(max)" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ShSySecurityItems">
+          <Key>
+            <PropertyRef Name="RecId" />
+          </Key>
+          <Property Name="RecId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SecurityItem" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ShUser">
+          <Key>
+            <PropertyRef Name="RecId" />
+          </Key>
+          <Property Name="RecId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FirstName" Type="varchar(max)" />
+          <Property Name="LastName" Type="varchar(max)" />
+          <Property Name="Username" Type="varchar(max)" />
+          <Property Name="email" Type="varchar(max)" />
+          <Property Name="FkShUserType" Type="int" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="password" Type="varchar(max)" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ShUserType">
+          <Key>
+            <PropertyRef Name="RecId" />
+          </Key>
+          <Property Name="RecId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Type" Type="varchar(max)" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Praesidium.dbo.FileView' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="FileView">
+          <Key>
+            <PropertyRef Name="RecId" />
+          </Key>
+          <Property Name="RecId" Type="int" Nullable="false" />
+          <Property Name="Title" Type="varchar" MaxLength="50" />
+          <Property Name="FileName" Type="varchar(max)" />
+          <Property Name="Description" Type="varchar(max)" />
+          <Property Name="UploadedBy" Type="varchar(max)" />
+          <Property Name="DateUploaded" Type="date" />
+          <Property Name="ModifiedBy" Type="varchar(max)" />
+          <Property Name="DateModified" Type="date" />
+          <Property Name="DownloadCount" Type="int" />
+          <Property Name="ViewCount" Type="int" />
+        </EntityType>
+        <Association Name="FK__ShFileKey__FkShF__5535A963">
+          <End Role="ShFile" Type="Self.ShFile" Multiplicity="0..1" />
+          <End Role="ShFileKeyword" Type="Self.ShFileKeyword" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ShFile">
+              <PropertyRef Name="RecId" />
+            </Principal>
+            <Dependent Role="ShFileKeyword">
+              <PropertyRef Name="FkShFile" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ShRfUserTypeAccess_ShSyPermissionLevels">
+          <End Role="ShSyPermissionLevels" Type="Self.ShSyPermissionLevels" Multiplicity="1" />
+          <End Role="ShRfUserTypeAccess" Type="Self.ShRfUserTypeAccess" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ShSyPermissionLevels">
+              <PropertyRef Name="RecId" />
+            </Principal>
+            <Dependent Role="ShRfUserTypeAccess">
+              <PropertyRef Name="FkShSyPermissionLevel" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ShRfUserTypeAccess_ShSySecurityItems">
+          <End Role="ShSySecurityItems" Type="Self.ShSySecurityItems" Multiplicity="1" />
+          <End Role="ShRfUserTypeAccess" Type="Self.ShRfUserTypeAccess" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ShSySecurityItems">
+              <PropertyRef Name="RecId" />
+            </Principal>
+            <Dependent Role="ShRfUserTypeAccess">
+              <PropertyRef Name="FkShSySecurityItem" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ShRfUserTypeAccess_ShUserType">
+          <End Role="ShUserType" Type="Self.ShUserType" Multiplicity="1" />
+          <End Role="ShRfUserTypeAccess" Type="Self.ShRfUserTypeAccess" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ShUserType">
+              <PropertyRef Name="RecId" />
+            </Principal>
+            <Dependent Role="ShRfUserTypeAccess">
+              <PropertyRef Name="FkShUserType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ShSyNavigationItem_ShSySection">
+          <End Role="ShSySection" Type="Self.ShSySection" Multiplicity="1" />
+          <End Role="ShSyNavigationItem" Type="Self.ShSyNavigationItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ShSySection">
+              <PropertyRef Name="RecId" />
+            </Principal>
+            <Dependent Role="ShSyNavigationItem">
+              <PropertyRef Name="FkShSySection" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ShUser_ShUserType">
+          <End Role="ShUserType" Type="Self.ShUserType" Multiplicity="0..1" />
+          <End Role="ShUser" Type="Self.ShUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ShUserType">
+              <PropertyRef Name="RecId" />
+            </Principal>
+            <Dependent Role="ShUser">
+              <PropertyRef Name="FkShUserType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="Search" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SearchTerm" Type="varchar" Mode="In" />
+          <Parameter Name="CurrentPage" Type="int" Mode="In" />
+          <Parameter Name="PageSize" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Split" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="string" Type="varchar" Mode="In" />
+          <Parameter Name="delimiter" Type="char" Mode="In" />
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="nameIndex" Type="int" Nullable="false" />
+                <Property Name="items" Type="varchar" MaxLength="8000" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <EntityContainer Name="AdminModelStoreContainer">
+          <EntitySet Name="ShFile" EntityType="Self.ShFile" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ShFileKeyword" EntityType="Self.ShFileKeyword" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ShRfUserTypeAccess" EntityType="Self.ShRfUserTypeAccess" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ShSyNavigationItem" EntityType="Self.ShSyNavigationItem" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ShSyPermissionLevels" EntityType="Self.ShSyPermissionLevels" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ShSySection" EntityType="Self.ShSySection" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ShSySecurityItems" EntityType="Self.ShSySecurityItems" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ShUser" EntityType="Self.ShUser" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ShUserType" EntityType="Self.ShUserType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FileView" EntityType="Self.FileView" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [FileView].[RecId] AS [RecId], 
+    [FileView].[Title] AS [Title], 
+    [FileView].[FileName] AS [FileName], 
+    [FileView].[Description] AS [Description], 
+    [FileView].[UploadedBy] AS [UploadedBy], 
+    [FileView].[DateUploaded] AS [DateUploaded], 
+    [FileView].[ModifiedBy] AS [ModifiedBy], 
+    [FileView].[DateModified] AS [DateModified], 
+    [FileView].[DownloadCount] AS [DownloadCount], 
+    [FileView].[ViewCount] AS [ViewCount]
+    FROM [dbo].[FileView] AS [FileView]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK__ShFileKey__FkShF__5535A963" Association="Self.FK__ShFileKey__FkShF__5535A963">
+            <End Role="ShFile" EntitySet="ShFile" />
+            <End Role="ShFileKeyword" EntitySet="ShFileKeyword" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ShRfUserTypeAccess_ShSyPermissionLevels" Association="Self.FK_ShRfUserTypeAccess_ShSyPermissionLevels">
+            <End Role="ShSyPermissionLevels" EntitySet="ShSyPermissionLevels" />
+            <End Role="ShRfUserTypeAccess" EntitySet="ShRfUserTypeAccess" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ShRfUserTypeAccess_ShSySecurityItems" Association="Self.FK_ShRfUserTypeAccess_ShSySecurityItems">
+            <End Role="ShSySecurityItems" EntitySet="ShSySecurityItems" />
+            <End Role="ShRfUserTypeAccess" EntitySet="ShRfUserTypeAccess" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ShRfUserTypeAccess_ShUserType" Association="Self.FK_ShRfUserTypeAccess_ShUserType">
+            <End Role="ShUserType" EntitySet="ShUserType" />
+            <End Role="ShRfUserTypeAccess" EntitySet="ShRfUserTypeAccess" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ShSyNavigationItem_ShSySection" Association="Self.FK_ShSyNavigationItem_ShSySection">
+            <End Role="ShSySection" EntitySet="ShSySection" />
+            <End Role="ShSyNavigationItem" EntitySet="ShSyNavigationItem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ShUser_ShUserType" Association="Self.FK_ShUser_ShUserType">
+            <End Role="ShUserType" EntitySet="ShUserType" />
+            <End Role="ShUser" EntitySet="ShUser" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AdminModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ShFile">
+          <Key>
+            <PropertyRef Name="RecId" />
+          </Key>
+          <Property Name="RecId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FileStore" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+          <Property Name="FkShSySection" Type="Int32" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UploadedBy" Type="Int32" />
+          <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="DateUploaded" Type="DateTime" Precision="0" />
+          <Property Name="DateModified" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="ShSySection" Relationship="Self.FK__ShFile__FkShSySe__5070F446" FromRole="ShFile" ToRole="ShSySection" />
+          <NavigationProperty Name="ShUser" Relationship="Self.FK__ShFile__Modified__52593CB8" FromRole="ShFile" ToRole="ShUser" />
+          <NavigationProperty Name="ShUser1" Relationship="Self.FK__ShFile__Uploaded__5165187F" FromRole="ShFile" ToRole="ShUser" />
+          <NavigationProperty Name="ShFileKeywords" Relationship="Self.FK__ShFileKey__FkShF__5535A963" FromRole="ShFile" ToRole="ShFileKeyword" />
+          <Property Name="ContentType" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DownloadCount" Type="Int32" />
+          <Property Name="ViewCount" Type="Int32" />
+          <Property Name="FileExtension" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="ShFileKeyword">
+          <Key>
+            <PropertyRef Name="RecId" />
+          </Key>
+          <Property Name="RecId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FkShFile" Type="Int32" />
+          <Property Name="Keyword" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="ShFile" Relationship="Self.FK__ShFileKey__FkShF__5535A963" FromRole="ShFileKeyword" ToRole="ShFile" />
+        </EntityType>
+        <EntityType Name="ShSyNavigationItem">
+          <Key>
+            <PropertyRef Name="RecId" />
+          </Key>
+          <Property Name="RecId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Controller" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Action" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DisplayText" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="FkShSySection" Type="Int32" Nullable="false" />
+          <Property Name="SortOrder" Type="Int32" Nullable="false" />
+          <Property Name="ParentId" Type="Int32" />
+          <NavigationProperty Name="ShSySection" Relationship="Self.FK_ShSyNavigationItem_ShSySection" FromRole="ShSyNavigationItem" ToRole="ShSySection" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ShSySection">
+          <Key>
+            <PropertyRef Name="RecId" />
+          </Key>
+          <Property Name="RecId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="ShFiles" Relationship="Self.FK__ShFile__FkShSySe__5070F446" FromRole="ShSySection" ToRole="ShFile" />
+          <NavigationProperty Name="ShSyNavigationItems" Relationship="Self.FK_ShSyNavigationItem_ShSySection" FromRole="ShSySection" ToRole="ShSyNavigationItem" />
+        </EntityType>
+        <EntityType Name="ShUser">
+          <Key>
+            <PropertyRef Name="RecId" />
+          </Key>
+          <Property Name="RecId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="LastName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Username" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="FkShUserType" Type="Int32" />
+          <Property Name="IsDeleted" Type="Boolean" />
+          <NavigationProperty Name="ShFiles" Relationship="Self.FK__ShFile__Modified__52593CB8" FromRole="ShUser" ToRole="ShFile" />
+          <NavigationProperty Name="ShFiles1" Relationship="Self.FK__ShFile__Uploaded__5165187F" FromRole="ShUser" ToRole="ShFile" />
+          <NavigationProperty Name="ShUserType" Relationship="Self.FK_ShUser_ShUserType" FromRole="ShUser" ToRole="ShUserType" />
+          <Property Name="password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ShUserType">
+          <Key>
+            <PropertyRef Name="RecId" />
+          </Key>
+          <Property Name="RecId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="ShUsers" Relationship="Self.FK_ShUser_ShUserType" FromRole="ShUserType" ToRole="ShUser" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="ShRfUserTypeAccesses" Relationship="AdminModel.FK_ShRfUserTypeAccess_ShUserType" FromRole="ShUserType" ToRole="ShRfUserTypeAccess" />
+        </EntityType>
+        <Association Name="FK__ShFile__FkShSySe__5070F446">
+          <End Role="ShSySection" Type="Self.ShSySection" Multiplicity="0..1" />
+          <End Role="ShFile" Type="Self.ShFile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ShSySection">
+              <PropertyRef Name="RecId" />
+            </Principal>
+            <Dependent Role="ShFile">
+              <PropertyRef Name="FkShSySection" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ShFile__Modified__52593CB8">
+          <End Role="ShUser" Type="Self.ShUser" Multiplicity="0..1" />
+          <End Role="ShFile" Type="Self.ShFile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ShUser">
+              <PropertyRef Name="RecId" />
+            </Principal>
+            <Dependent Role="ShFile">
+              <PropertyRef Name="ModifiedBy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ShFile__Uploaded__5165187F">
+          <End Role="ShUser" Type="Self.ShUser" Multiplicity="0..1" />
+          <End Role="ShFile" Type="Self.ShFile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ShUser">
+              <PropertyRef Name="RecId" />
+            </Principal>
+            <Dependent Role="ShFile">
+              <PropertyRef Name="UploadedBy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ShFileKey__FkShF__5535A963">
+          <End Role="ShFile" Type="Self.ShFile" Multiplicity="0..1" />
+          <End Role="ShFileKeyword" Type="Self.ShFileKeyword" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ShFile">
+              <PropertyRef Name="RecId" />
+            </Principal>
+            <Dependent Role="ShFileKeyword">
+              <PropertyRef Name="FkShFile" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ShSyNavigationItem_ShSySection">
+          <End Role="ShSySection" Type="Self.ShSySection" Multiplicity="1" />
+          <End Role="ShSyNavigationItem" Type="Self.ShSyNavigationItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ShSySection">
+              <PropertyRef Name="RecId" />
+            </Principal>
+            <Dependent Role="ShSyNavigationItem">
+              <PropertyRef Name="FkShSySection" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ShUser_ShUserType">
+          <End Role="ShUserType" Type="Self.ShUserType" Multiplicity="0..1" />
+          <End Role="ShUser" Type="Self.ShUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ShUserType">
+              <PropertyRef Name="RecId" />
+            </Principal>
+            <Dependent Role="ShUser">
+              <PropertyRef Name="FkShUserType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="AdminEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ShFiles" EntityType="Self.ShFile" />
+          <EntitySet Name="ShFileKeywords" EntityType="Self.ShFileKeyword" />
+          <EntitySet Name="ShSyNavigationItems" EntityType="Self.ShSyNavigationItem" />
+          <EntitySet Name="ShSySections" EntityType="Self.ShSySection" />
+          <EntitySet Name="ShUsers" EntityType="Self.ShUser" />
+          <EntitySet Name="ShUserTypes" EntityType="Self.ShUserType" />
+          <AssociationSet Name="FK__ShFile__FkShSySe__5070F446" Association="Self.FK__ShFile__FkShSySe__5070F446">
+            <End Role="ShSySection" EntitySet="ShSySections" />
+            <End Role="ShFile" EntitySet="ShFiles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ShFile__Modified__52593CB8" Association="Self.FK__ShFile__Modified__52593CB8">
+            <End Role="ShUser" EntitySet="ShUsers" />
+            <End Role="ShFile" EntitySet="ShFiles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ShFile__Uploaded__5165187F" Association="Self.FK__ShFile__Uploaded__5165187F">
+            <End Role="ShUser" EntitySet="ShUsers" />
+            <End Role="ShFile" EntitySet="ShFiles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ShFileKey__FkShF__5535A963" Association="Self.FK__ShFileKey__FkShF__5535A963">
+            <End Role="ShFile" EntitySet="ShFiles" />
+            <End Role="ShFileKeyword" EntitySet="ShFileKeywords" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ShSyNavigationItem_ShSySection" Association="Self.FK_ShSyNavigationItem_ShSySection">
+            <End Role="ShSySection" EntitySet="ShSySections" />
+            <End Role="ShSyNavigationItem" EntitySet="ShSyNavigationItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ShUser_ShUserType" Association="Self.FK_ShUser_ShUserType">
+            <End Role="ShUserType" EntitySet="ShUserTypes" />
+            <End Role="ShUser" EntitySet="ShUsers" />
+          </AssociationSet>
+          <EntitySet Name="FileViews" EntityType="AdminModel.FileView" />
+          <FunctionImport Name="Search">
+            <Parameter Name="SearchTerm" Mode="In" Type="String" />
+            <Parameter Name="CurrentPage" Mode="In" Type="Int32" />
+            <Parameter Name="PageSize" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="Split" IsComposable="true" ReturnType="Collection(AdminModel.Split_Result)">
+            <Parameter Name="string" Mode="In" Type="String" />
+            <Parameter Name="delimiter" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="ShRfUserTypeAccesses" EntityType="AdminModel.ShRfUserTypeAccess" />
+          <EntitySet Name="ShSyPermissionLevels" EntityType="AdminModel.ShSyPermissionLevel" />
+          <AssociationSet Name="FK_ShRfUserTypeAccess_ShSyPermissionLevels" Association="AdminModel.FK_ShRfUserTypeAccess_ShSyPermissionLevels">
+            <End Role="ShSyPermissionLevel" EntitySet="ShSyPermissionLevels" />
+            <End Role="ShRfUserTypeAccess" EntitySet="ShRfUserTypeAccesses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ShRfUserTypeAccess_ShUserType" Association="AdminModel.FK_ShRfUserTypeAccess_ShUserType">
+            <End Role="ShUserType" EntitySet="ShUserTypes" />
+            <End Role="ShRfUserTypeAccess" EntitySet="ShRfUserTypeAccesses" />
+          </AssociationSet>
+          <EntitySet Name="ShSySecurityItems" EntityType="AdminModel.ShSySecurityItem" />
+          <AssociationSet Name="FK_ShRfUserTypeAccess_ShSySecurityItems" Association="AdminModel.FK_ShRfUserTypeAccess_ShSySecurityItems">
+            <End Role="ShSySecurityItem" EntitySet="ShSySecurityItems" />
+            <End Role="ShRfUserTypeAccess" EntitySet="ShRfUserTypeAccesses" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="FileView">
+          <Key>
+            <PropertyRef Name="RecId" />
+          </Key>
+          <Property Name="RecId" Type="Int32" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UploadedBy" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="DateUploaded" Type="DateTime" Precision="0" />
+          <Property Name="ModifiedBy" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="DateModified" Type="DateTime" Precision="0" />
+          <Property Name="DownloadCount" Type="Int32" />
+          <Property Name="ViewCount" Type="Int32" />
+        </EntityType>
+        <ComplexType Name="Split_Result">
+          <Property Type="Int32" Name="nameIndex" Nullable="false" />
+          <Property Type="String" Name="items" Nullable="true" MaxLength="8000" />
+        </ComplexType>
+        <EntityType Name="ShRfUserTypeAccess">
+          <Key>
+            <PropertyRef Name="RecId" />
+          </Key>
+          <Property Name="RecId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FkShUserType" Type="Int32" Nullable="false" />
+          <Property Name="FkShSySecurityItem" Type="Int32" Nullable="false" />
+          <Property Name="FkShSyPermissionLevel" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ShSyPermissionLevel" Relationship="AdminModel.FK_ShRfUserTypeAccess_ShSyPermissionLevels" FromRole="ShRfUserTypeAccess" ToRole="ShSyPermissionLevel" />
+          <NavigationProperty Name="ShUserType" Relationship="AdminModel.FK_ShRfUserTypeAccess_ShUserType" FromRole="ShRfUserTypeAccess" ToRole="ShUserType" />
+          <NavigationProperty Name="ShSySecurityItem" Relationship="AdminModel.FK_ShRfUserTypeAccess_ShSySecurityItems" FromRole="ShRfUserTypeAccess" ToRole="ShSySecurityItem" />
+        </EntityType>
+        <EntityType Name="ShSyPermissionLevel">
+          <Key>
+            <PropertyRef Name="RecId" />
+          </Key>
+          <Property Name="RecId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PermissionLevel" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="ShRfUserTypeAccesses" Relationship="AdminModel.FK_ShRfUserTypeAccess_ShSyPermissionLevels" FromRole="ShSyPermissionLevel" ToRole="ShRfUserTypeAccess" />
+        </EntityType>
+        <Association Name="FK_ShRfUserTypeAccess_ShSyPermissionLevels">
+          <End Type="AdminModel.ShSyPermissionLevel" Role="ShSyPermissionLevel" Multiplicity="1" />
+          <End Type="AdminModel.ShRfUserTypeAccess" Role="ShRfUserTypeAccess" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ShSyPermissionLevel">
+              <PropertyRef Name="RecId" />
+            </Principal>
+            <Dependent Role="ShRfUserTypeAccess">
+              <PropertyRef Name="FkShSyPermissionLevel" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ShRfUserTypeAccess_ShUserType">
+          <End Type="AdminModel.ShUserType" Role="ShUserType" Multiplicity="1" />
+          <End Type="AdminModel.ShRfUserTypeAccess" Role="ShRfUserTypeAccess" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ShUserType">
+              <PropertyRef Name="RecId" />
+            </Principal>
+            <Dependent Role="ShRfUserTypeAccess">
+              <PropertyRef Name="FkShUserType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="ShSySecurityItem">
+          <Key>
+            <PropertyRef Name="RecId" />
+          </Key>
+          <Property Name="RecId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SecurityItem" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="ShRfUserTypeAccesses" Relationship="AdminModel.FK_ShRfUserTypeAccess_ShSySecurityItems" FromRole="ShSySecurityItem" ToRole="ShRfUserTypeAccess" />
+        </EntityType>
+        <Association Name="FK_ShRfUserTypeAccess_ShSySecurityItems">
+          <End Type="AdminModel.ShSySecurityItem" Role="ShSySecurityItem" Multiplicity="1" />
+          <End Type="AdminModel.ShRfUserTypeAccess" Role="ShRfUserTypeAccess" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ShSySecurityItem">
+              <PropertyRef Name="RecId" />
+            </Principal>
+            <Dependent Role="ShRfUserTypeAccess">
+              <PropertyRef Name="FkShSySecurityItem" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AdminModelStoreContainer" CdmEntityContainer="AdminEntities">
+          <EntitySetMapping Name="ShFiles">
+            <EntityTypeMapping TypeName="AdminModel.ShFile">
+              <MappingFragment StoreEntitySet="ShFile">
+                <ScalarProperty Name="FileExtension" ColumnName="FileExtension" />
+                <ScalarProperty Name="ViewCount" ColumnName="ViewCount" />
+                <ScalarProperty Name="DownloadCount" ColumnName="DownloadCount" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+                <ScalarProperty Name="RecId" ColumnName="RecId" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="FileStore" ColumnName="FileStore" />
+                <ScalarProperty Name="FkShSySection" ColumnName="FkShSySection" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="UploadedBy" ColumnName="UploadedBy" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="DateUploaded" ColumnName="DateUploaded" />
+                <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ShFileKeywords">
+            <EntityTypeMapping TypeName="AdminModel.ShFileKeyword">
+              <MappingFragment StoreEntitySet="ShFileKeyword">
+                <ScalarProperty Name="RecId" ColumnName="RecId" />
+                <ScalarProperty Name="FkShFile" ColumnName="FkShFile" />
+                <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ShSyNavigationItems">
+            <EntityTypeMapping TypeName="AdminModel.ShSyNavigationItem">
+              <MappingFragment StoreEntitySet="ShSyNavigationItem">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="RecId" ColumnName="RecId" />
+                <ScalarProperty Name="Controller" ColumnName="Controller" />
+                <ScalarProperty Name="Action" ColumnName="Action" />
+                <ScalarProperty Name="DisplayText" ColumnName="DisplayText" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="FkShSySection" ColumnName="FkShSySection" />
+                <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ShSySections">
+            <EntityTypeMapping TypeName="AdminModel.ShSySection">
+              <MappingFragment StoreEntitySet="ShSySection">
+                <ScalarProperty Name="RecId" ColumnName="RecId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ShUsers">
+            <EntityTypeMapping TypeName="AdminModel.ShUser">
+              <MappingFragment StoreEntitySet="ShUser">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="RecId" ColumnName="RecId" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="FkShUserType" ColumnName="FkShUserType" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ShUserTypes">
+            <EntityTypeMapping TypeName="AdminModel.ShUserType">
+              <MappingFragment StoreEntitySet="ShUserType">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="RecId" ColumnName="RecId" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FileViews">
+            <EntityTypeMapping TypeName="AdminModel.FileView">
+              <MappingFragment StoreEntitySet="FileView">
+                <ScalarProperty Name="ViewCount" ColumnName="ViewCount" />
+                <ScalarProperty Name="DownloadCount" ColumnName="DownloadCount" />
+                <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="DateUploaded" ColumnName="DateUploaded" />
+                <ScalarProperty Name="UploadedBy" ColumnName="UploadedBy" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="RecId" ColumnName="RecId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="Search" FunctionName="AdminModel.Store.Search" />
+          <FunctionImportMapping FunctionImportName="Split" FunctionName="AdminModel.Store.Split">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="AdminModel.Split_Result">
+                <ScalarProperty Name="nameIndex" ColumnName="nameIndex" />
+                <ScalarProperty Name="items" ColumnName="items" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="ShRfUserTypeAccesses">
+            <EntityTypeMapping TypeName="AdminModel.ShRfUserTypeAccess">
+              <MappingFragment StoreEntitySet="ShRfUserTypeAccess">
+                <ScalarProperty Name="FkShSyPermissionLevel" ColumnName="FkShSyPermissionLevel" />
+                <ScalarProperty Name="FkShSySecurityItem" ColumnName="FkShSySecurityItem" />
+                <ScalarProperty Name="FkShUserType" ColumnName="FkShUserType" />
+                <ScalarProperty Name="RecId" ColumnName="RecId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ShSyPermissionLevels">
+            <EntityTypeMapping TypeName="AdminModel.ShSyPermissionLevel">
+              <MappingFragment StoreEntitySet="ShSyPermissionLevels">
+                <ScalarProperty Name="PermissionLevel" ColumnName="PermissionLevel" />
+                <ScalarProperty Name="RecId" ColumnName="RecId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ShSySecurityItems">
+            <EntityTypeMapping TypeName="AdminModel.ShSySecurityItem">
+              <MappingFragment StoreEntitySet="ShSySecurityItems">
+                <ScalarProperty Name="SecurityItem" ColumnName="SecurityItem" />
+                <ScalarProperty Name="RecId" ColumnName="RecId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

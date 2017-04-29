@@ -1,0 +1,74 @@
+﻿@model Praesidium.Data_Models.Admin.ShSyNavigationItem
+
+@{
+    ViewBag.Title = "NavigationItemsDetails";
+}
+
+<h2>NavigationItemsDetails</h2>
+
+<div>
+    <h4>ShSyNavigationItem</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Controller)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Controller)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Action)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Action)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DisplayText)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DisplayText)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsActive)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SortOrder)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SortOrder)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ParentId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ParentId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShSySection.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShSySection.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "NavigationItemsEdit", new { id = Model.RecId }) |
+    @Html.ActionLink("Back to List", "NavigationItems")
+</p>

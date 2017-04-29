@@ -1,0 +1,37 @@
+﻿@model Praesidium.Data_Models.Admin.ShUserType
+@{
+    ViewBag.Title = "UserTypesCreate";
+}
+<h2>UserTypesCreate</h2>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>ShUserType</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Type, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Type, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Type, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <label>
+            <input type="radio" name="radNavigation" id="NavigationR" />
+            <label for="NavigationR">Read</label>
+            <input type="radio" name="radQuestion" id="questionYes" data-bind="checkedValue: true, checked: data().HasBlackouts" />
+            <label for="questionYes">Yes</label>
+        </label>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+<div>
+    @Html.ActionLink("Back to List", "UserTypes")
+</div>

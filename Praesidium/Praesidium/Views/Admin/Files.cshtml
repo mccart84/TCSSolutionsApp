@@ -1,0 +1,109 @@
+﻿@model PagedList.IPagedList<Praesidium.Data_Models.Admin.FileView>
+@using PagedList.Mvc;<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+
+<script src="~/Scripts/Admin/NavigationItems/NavigationItems.js"></script>
+<div class="panel panel-heading">
+    <h2>File Admin Page</h2>
+</div>
+
+<div class="panel">
+    <div style="">
+        <div class="col-md-10">
+            <h4><b>List of Files</b></h4>
+        </div>
+        <div class="col-md-2">
+            <p>
+                @Html.ActionLink("Add New File", "FilesCreate", null, new { @class = "btn btn-info pull-right" })
+            </p>
+        </div>
+        <br />
+    </div>
+
+    <table class="table panel table-striped">
+        <tr>
+            <th>
+                Title
+            </th>
+            <th style="width: 20%;">
+                FileName
+            </th>
+            <th>
+                Content
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                UploadedBy
+            </th>
+            <th>
+                DateUploaded
+            </th>
+            <th>
+                ModifiedBy
+            </th>
+            <th>
+                DateModified
+            </th>
+            <th style="width: 165px;">
+                Actions
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FileName)
+                </td>
+                <td>
+                    @Html.ActionLink("Download", "File", "Download", new { id = item.RecId }, null)
+                    <br />
+                    <a class="iframe" href="https://docs.google.com/gview?url=@Url.Action("File", "Download", new {id = item.RecId}, Request.Url.Scheme)">View</a>
+                </td>
+                <td>
+                    @{
+
+                        if (item.Description.Length > 25)
+                        {
+                            @Html.Raw(HttpUtility.HtmlDecode(item.Description.Substring(0, 25) + "&hellip;"))
+
+                        }
+                        else
+                        {
+                            @Html.Raw(HttpUtility.HtmlDecode(item.Description))
+                        }
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UploadedBy)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateUploaded)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ModifiedBy)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateModified)
+                </td>
+                <td>
+                    @Html.ActionLink(" ", "FilesEdit", new { id = item.RecId }, new { @class = "btn btn-info glyphicon glyphicon-edit", @title = "Edit File" })
+
+                    @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
+                    @*@Html.ActionLink("Delete", "Delete", new {/* id=item.PrimaryKey */})*@
+                </td>
+            </tr>
+                        }
+
+    </table>
+
+    <div style="text-align: center;">
+        @Html.PagedListPager(Model, page => Url.Action("Files",
+        new { page }))
+    </div>
+</div>

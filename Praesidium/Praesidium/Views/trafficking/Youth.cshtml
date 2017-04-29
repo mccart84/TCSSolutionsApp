@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Youth";
+}
+
+
+
+<div class="container-fluid" id="photo_cont" style="margin-bottom:3%;">
+    <div class="row">
+        <div class="col-md-12">
+            <figure class="effect-caged">
+                <img src="~/Content/Images/pic4.png" style="width:100%;max-height:330px;" />
+                <figcaption>
+                    <h1> <span>Youth</span></h1>
+                </figcaption>
+            </figure>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="row">
+
+    <div class="col-xs-12">
+
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="headers">Youth</h1>
+                <p class="lead" id="p_text">
+                    Youth are some of the most vulnerable targets out there when it comes to human trafficking. This page will help them learn how take extra precaution and how to
+                    to protect themselves.
+
+                </p>
+            </div>
+            <div class="col-md-4 align-center " id="borders" style="min-height:150px;">
+                <h3 id="headers_borders">Quick Tips!</h3>
+                <ul class="align-left" id="p_textborders">
+                    <li>Never apprach or engage someone who you thinkk might be a trafficker.</li>
+                    <li>Never investigate a trafficking situation on your own.</li>
+                    <li>If you suspect trafficking, DO NOT INTERVENE, for the safety of youself and your family.</li>
+
+                    </ul>
+        
+            </div>
+        </div>
+</div>
+</div>
+@{ Html.RenderAction("FileList", new { id = 8 }); }
+

@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Teen";
+}
+
+<div class="container-fluid" id="photo_cont" style="margin-bottom:3%;">
+    <div class="row">
+        <div class="col-md-12">
+            <figure class="effect-caged img-responsive">
+                <img src="~/Content/Images/cyber_hoodie.jpg" style="width:100%;max-height:330px;" />              
+            </figure>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <h1 id="headers" class="align-left">Cyber Security for Teens</h1>
+        <p id="p_text">
+            This is a page where teens can get non-judgemental information and serves to better educate them on
+            issues that can help them avoid being unsafe online.
+            
+ </div>
+    <div class="col-md-4 align-center " id="borders" style="min-height:150px;">
+        <h3 id="headers_borders">Teen Page Resources</h3>
+        <ul class="align-left" id="p_textborders">
+            <li><A HREF="http://www.cox.com/wcm/en/aboutus/datasheet/takecharge/2009-teen-survey.pdf">COX Communications Report</A></li>
+            <li><A HREF="http://www.innocentsatrisk.org">Innocents at Risk</A></li>
+            <li><A HREF="https://humantraffickinghotline.org">Human Trafficking Hotline</A></li>
+            <center>@Html.ActionLink("Teen Quiz", "Quiz", new { quizId = 2 }, new { @class = "btn btn-info", @title = "" })  </center>
+        </ul>
+    </div>
+</div>
+@{ Html.RenderAction("FileList", new { id = 13 }); }

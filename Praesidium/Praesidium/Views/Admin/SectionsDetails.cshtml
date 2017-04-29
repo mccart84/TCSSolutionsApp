@@ -1,0 +1,34 @@
+﻿@model Praesidium.Data_Models.Admin.ShSySection
+
+@{
+    ViewBag.Title = "SectionsDetails";
+}
+
+<h2>SectionsDetails</h2>
+
+<div>
+    <h4>ShSySection</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsActive)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "SectionsEdit", new { id = Model.RecId }) |
+    @Html.ActionLink("Back to List", "Sections")
+</p>

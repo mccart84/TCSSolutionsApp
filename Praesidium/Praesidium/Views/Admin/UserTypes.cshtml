@@ -1,0 +1,54 @@
+﻿@model PagedList.IPagedList<Praesidium.Data_Models.Admin.ShUserType>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+
+<div class="panel panel-heading">
+    <h2>User Types Admin Page</h2>
+</div>
+
+<div class="panel">
+    <div style="">
+        <div class="col-md-10">
+            <h4><b>List of User Types</b></h4>
+        </div>
+        <div class="col-md-2">
+            @*<p>
+                @Html.ActionLink("Create New", "UserTypesCreate", null, new { @class = "btn btn-info pull-right" })
+            </p>*@
+        </div>
+        <br />
+    </div>
+
+    <table class="table">
+        <tr>
+            <th>
+                Type
+            </th>
+            @*<th>
+                Deleted
+            </th>*@
+            @*<th style="width: 165px;">
+                Actions
+            </th>*@
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Type)
+                </td>
+                @*<td>
+                    @Html.DisplayFor(modelItem => item.IsDeleted)
+                </td>*@
+                @*<td>
+                    @Html.ActionLink(" ", "UserTypesEdit", new { id = item.RecId }, new { @class = "btn btn-info glyphicon glyphicon-edit", @title = "Edit User Type" })
+                    @Html.ActionLink(" ", "UserTypesDetails", new { id = item.RecId }, new { @class = "btn btn-info glyphicon glyphicon-eye-open", @title = "View Details" })
+                    @Html.ActionLink(" ", "UserTypesDelete", new { id = item.RecId }, new { @class = "btn btn-danger glyphicon glyphicon-trash", @title = "Delete User Type" })
+                </td>*@
+            </tr>
+        }
+
+    </table>
+    </div>

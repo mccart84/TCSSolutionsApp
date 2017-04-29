@@ -1,0 +1,48 @@
+﻿@using Microsoft.Ajax.Utilities
+@model IEnumerable<Praesidium.Data_Models.Admin.FileView>
+@if (Model != null)
+{
+    foreach (var file in Model)
+    {
+        <div class="row well">
+            <div class="col-md-2 text-right">
+                @{
+                    if (file.FileName.Contains(".pdf"))
+                    {
+                        <img src="~/Content/Images/pdf_icon.png" style="height: 100px; width: auto;"/>
+                    }
+                    else if (file.FileName.Contains(".doc"))
+                    {
+                        <img src="~/Content/Images/doc_icon.png" style="height: 100px; width: auto;"/>
+                    }
+                    else if (file.FileName.Contains(".ppt"))
+                    {
+                        <img src="~/Content/Images/ppt_icon.png" style="height: 100px; width: auto;"/>
+                    }
+
+
+                }
+            </div>
+            <div class="col-md-10">
+                <div>
+                    <h2 style="color: slategrey; text-align: Left;"><strong>@file.Title</strong>
+                    </h2>
+                    <p id="p_text">
+                        @{
+                            if (file.Description.Length > 400)
+                            {
+                                @Html.Raw(HttpUtility.HtmlDecode(file.Description.Substring(0, 399) + "&hellip;"))
+                            }
+                            else
+                            {
+                                @Html.Raw(HttpUtility.HtmlDecode(file.Description))
+                            }
+                        }
+                    </p>
+                    @Html.ActionLink("View File", "Show", "File", new { id = file.RecId }, new {@class="btn btn-info"})
+                </div>
+            </div>
+
+        </div>
+    }
+}

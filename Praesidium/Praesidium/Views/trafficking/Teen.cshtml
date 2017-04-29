@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Teen";
+}
+
+<div class="container-fluid" id="photo_cont" style="margin-bottom:3%;">
+    <div class="row">
+        <div class="col-md-12">
+
+            <figure class="effect-caged">
+
+                <img src="~/Content/Images/teen.png" style="width:100%;max-height:330px;" />
+                <figcaption>
+                    <h1> <span>Teen</span></h1>
+                </figcaption>
+            </figure>
+
+        </div>
+
+    </div>
+</div>
+<!-- Carousel -->
+
+<div class="row">
+
+    <div class="col-xs-12">
+
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="headers">Teens</h1>
+                <p class="lead" id="p_text">
+                    Teens are some of the most targeted victims when it comes to trafficking. This page focuses on teaching teens what human trafficking is,
+                    the importance of prevention, and ways to protect themselves.
+                </p>
+            </div>
+            <div class="col-md-4 align-center " id="borders" style="min-height:150px;">
+                <h3 id="headers_borders">Teen Page Resources</h3>
+                <ul class="align-left" id="p_textborders">
+                    <li><A HREF="http://www.teensontrafficking.org/">Teens On Trafficking Org</A></li>
+                    <li><A HREF="http://sharedhope.org/what-we-do/prevent/awareness/">Shared Hope Org</A></li>
+                    <li><A HREF="https://polarisproject.org/">Polaris Project</A></li>
+                   
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+@{ Html.RenderAction("FileList", new { id = 9 }); }

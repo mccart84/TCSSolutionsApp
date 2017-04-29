@@ -1,0 +1,415 @@
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\ApplicationInsights.config
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\roslyn\csc.exe
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\roslyn\Microsoft.CodeAnalysis.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\roslyn\Microsoft.CSharp.Core.targets
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\roslyn\Microsoft.VisualBasic.Core.targets
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\roslyn\System.Collections.Immutable.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\roslyn\System.Reflection.Metadata.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\roslyn\vbc.exe
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\roslyn\VBCSCompiler.exe
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\roslyn\VBCSCompiler.exe.config
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\Praesidium.dll.config
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\Praesidium.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\Praesidium.pdb
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\Antlr3.Runtime.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\Microsoft.AI.Agent.Intercept.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\Microsoft.AI.DependencyCollector.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\Microsoft.AI.PerfCounterCollector.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\Microsoft.AI.ServerTelemetryChannel.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\Microsoft.AI.Web.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\Microsoft.AI.WindowsServer.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\Microsoft.ApplicationInsights.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\Microsoft.Web.Infrastructure.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\Newtonsoft.Json.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\System.Web.Helpers.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\System.Web.Mvc.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\System.Web.Optimization.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\System.Web.Razor.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\System.Web.WebPages.Deployment.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\System.Web.WebPages.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\System.Web.WebPages.Razor.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\WebGrease.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\Microsoft.AI.DependencyCollector.xml
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\Microsoft.AI.ServerTelemetryChannel.xml
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\Microsoft.AI.Web.xml
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\Microsoft.AI.WindowsServer.xml
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\Microsoft.ApplicationInsights.xml
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\System.Web.Helpers.xml
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\System.Web.Mvc.xml
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\System.Web.Optimization.xml
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\System.Web.Razor.xml
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\System.Web.WebPages.xml
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\System.Web.WebPages.Deployment.xml
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\System.Web.WebPages.Razor.xml
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\Antlr3.Runtime.pdb
+f:\visual studio 2015\Projects\Praesidium\Praesidium\bin\Newtonsoft.Json.xml
+f:\visual studio 2015\Projects\Praesidium\Praesidium\obj\Debug\Praesidium.csprojResolveAssemblyReference.cache
+f:\visual studio 2015\Projects\Praesidium\Praesidium\obj\Debug\Praesidium.dll
+f:\visual studio 2015\Projects\Praesidium\Praesidium\obj\Debug\Praesidium.pdb
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\ApplicationInsights.config
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\csc.exe
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\vbc.exe
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\VBCSCompiler.exe
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Praesidium.dll.config
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Praesidium.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Praesidium.pdb
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Antlr3.Runtime.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.Web.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.ApplicationInsights.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Newtonsoft.Json.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Helpers.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Mvc.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Optimization.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Razor.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.Deployment.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.Razor.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\WebGrease.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.Web.xml
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.ApplicationInsights.xml
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Helpers.xml
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Mvc.xml
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Optimization.xml
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Razor.xml
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.xml
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.Deployment.xml
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.Razor.xml
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Antlr3.Runtime.pdb
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Newtonsoft.Json.xml
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\obj\Debug\Praesidium.csprojResolveAssemblyReference.cache
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\obj\Debug\Praesidium.dll
+C:\Users\russm\Source\Repos\Praesidium\Praesidium\Praesidium\obj\Debug\Praesidium.pdb
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\ApplicationInsights.config
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\csc.exe
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\vbc.exe
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\VBCSCompiler.exe
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Praesidium.dll.config
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Praesidium.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Praesidium.pdb
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Antlr3.Runtime.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.Web.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.ApplicationInsights.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Newtonsoft.Json.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Helpers.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Mvc.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Optimization.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Razor.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.Deployment.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.Razor.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\WebGrease.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.Web.xml
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.ApplicationInsights.xml
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Helpers.xml
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Mvc.xml
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Optimization.xml
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Razor.xml
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.xml
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.Deployment.xml
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.Razor.xml
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Antlr3.Runtime.pdb
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Newtonsoft.Json.xml
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\obj\Debug\Praesidium.csprojResolveAssemblyReference.cache
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\obj\Debug\Praesidium.dll
+C:\Users\User\Source\Repos\Praesidium\Praesidium\Praesidium\obj\Debug\Praesidium.pdb
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\ApplicationInsights.config
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\csc.exe
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\vbc.exe
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Praesidium.dll.config
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Praesidium.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Praesidium.pdb
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Antlr3.Runtime.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\EntityFramework.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\EntityFramework.SqlServer.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.Web.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Newtonsoft.Json.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Helpers.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Mvc.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Optimization.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Razor.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\WebGrease.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\EntityFramework.xml
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\EntityFramework.SqlServer.xml
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.Web.xml
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Helpers.xml
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Mvc.xml
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Optimization.xml
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Razor.xml
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.xml
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Antlr3.Runtime.pdb
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Newtonsoft.Json.xml
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\obj\Debug\Praesidium.csprojResolveAssemblyReference.cache
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\obj\Debug\Praesidium.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\obj\Debug\Praesidium.pdb
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\AdminLte.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\AdminLte.pdb
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\AdminLte.xml
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\PagedList.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\PagedList.Mvc.dll
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\PagedList.xml
+C:\Users\Ryan\Source\Repos\Praesidium\Praesidium\Praesidium\bin\PagedList.Mvc.xml
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\ApplicationInsights.config
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\csc.exe
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\vbc.exe
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\VBCSCompiler.exe
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Praesidium.dll.config
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Praesidium.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Praesidium.pdb
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\AdminLte.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Antlr3.Runtime.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\EntityFramework.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\EntityFramework.SqlServer.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.Web.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Newtonsoft.Json.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\PagedList.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\PagedList.Mvc.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Helpers.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Mvc.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Optimization.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Razor.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.Razor.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\WebGrease.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\AdminLte.pdb
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\AdminLte.xml
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\EntityFramework.xml
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\EntityFramework.SqlServer.xml
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.Web.xml
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\PagedList.xml
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\PagedList.Mvc.xml
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Helpers.xml
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Mvc.xml
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Optimization.xml
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Razor.xml
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.xml
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.Razor.xml
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Antlr3.Runtime.pdb
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Newtonsoft.Json.xml
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\obj\Debug\Praesidium.csprojResolveAssemblyReference.cache
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\obj\Debug\Praesidium.dll
+C:\Users\Tyler\Source\Repos\Praesidium\Praesidium\Praesidium\obj\Debug\Praesidium.pdb
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\ApplicationInsights.config
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\csc.exe
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\vbc.exe
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\VBCSCompiler.exe
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Praesidium.dll.config
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Praesidium.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Praesidium.pdb
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\AdminLte.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Antlr3.Runtime.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\EntityFramework.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\EntityFramework.SqlServer.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.Web.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Newtonsoft.Json.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\PagedList.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\PagedList.Mvc.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Helpers.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Mvc.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Optimization.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Razor.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.Razor.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\WebGrease.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\AdminLte.pdb
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\AdminLte.xml
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\EntityFramework.xml
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\EntityFramework.SqlServer.xml
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.Web.xml
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\PagedList.xml
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\PagedList.Mvc.xml
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Helpers.xml
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Mvc.xml
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Optimization.xml
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Razor.xml
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.xml
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.Razor.xml
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Antlr3.Runtime.pdb
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Newtonsoft.Json.xml
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\obj\Debug\Praesidium.csprojResolveAssemblyReference.cache
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\obj\Debug\Praesidium.dll
+C:\Users\Abbie\Source\Repos\Praesidium\Praesidium\Praesidium\obj\Debug\Praesidium.pdb
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\ApplicationInsights.config
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\csc.exe
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\vbc.exe
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\VBCSCompiler.exe
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Praesidium.dll.config
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Praesidium.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Praesidium.pdb
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\AdminLte.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Antlr3.Runtime.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\EntityFramework.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\EntityFramework.SqlServer.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.Web.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Newtonsoft.Json.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\PagedList.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\PagedList.Mvc.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Helpers.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Mvc.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Optimization.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Razor.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.Razor.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\WebGrease.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\AdminLte.pdb
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\AdminLte.xml
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\EntityFramework.xml
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\EntityFramework.SqlServer.xml
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.Web.xml
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\PagedList.xml
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\PagedList.Mvc.xml
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Helpers.xml
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Mvc.xml
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Optimization.xml
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.Razor.xml
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.xml
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\System.Web.WebPages.Razor.xml
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Antlr3.Runtime.pdb
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\bin\Newtonsoft.Json.xml
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\obj\Debug\Praesidium.csprojResolveAssemblyReference.cache
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\obj\Debug\Praesidium.dll
+C:\Users\Alyssa\Source\Repos\Praesidium\Praesidium\Praesidium\obj\Debug\Praesidium.pdb

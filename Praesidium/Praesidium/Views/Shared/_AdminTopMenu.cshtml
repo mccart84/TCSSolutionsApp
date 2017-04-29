@@ -1,0 +1,35 @@
+﻿@using System.Runtime.Remoting.Messaging
+@using System.Web.UI.WebControls
+@using Praesidium.DAL;
+@{
+    ViewBag.Layout = null;
+    var LoggedInAs = Users.GetUserNameById(Convert.ToInt32(Session["User"]));
+}
+<header class="main-header">
+    <!-- Logo -->
+    @Html.ActionLink("T.C.S. Solutions", "Index", "Home", new { area = "" }, new { @class = "logo", @style = "font-weight: Bold;" })
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top" role="navigation">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+        </a>
+        <!-- Navbar Right Menu -->
+        <div class="navbar-custom-menu">
+            <table class="nav navbar-nav">
+                <tr style="height: 50px;">
+                    <td style="vertical-align: middle;">
+                        <div class="pull-right" style="display: table-cell; vertical-align: middle !important;color: white; font-weight: bold; padding-right: 10px;">
+                            Welcome back, @LoggedInAs
+                        </div>
+                    </td>
+                    <td style="vertical-align: middle;">
+                        <div class="pull-right" style="display: table-cell; vertical-align: middle !important;">
+                            @Html.ActionLink("Logout", "Logout", "Login", null, new { @class = "btn btn-sm btn-danger" })
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </nav>
+</header>

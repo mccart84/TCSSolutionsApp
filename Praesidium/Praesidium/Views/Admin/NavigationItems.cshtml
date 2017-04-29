@@ -1,0 +1,83 @@
+﻿@model PagedList.IPagedList<Praesidium.Data_Models.Admin.ShSyNavigationItem>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+@{
+    var sections = ViewBag.Sections;
+}
+
+<script src="~/Scripts/Admin/NavigationItems/NavigationItems.js"></script>
+<div class="panel panel-heading">
+    <h2>Navigation Items Admin Page</h2>
+</div>
+
+<div class="panel">
+
+    <div style="">
+        <div class="col-md-10">
+            <h4><b>List of Navigation Items</b></h4>
+        </div>
+        <div class="col-md-2">
+            @*<p>
+                @Html.ActionLink("Create New", "NavigationItemsCreate", null, new { @class = "btn btn-info pull-right" })
+            </p>*@
+        </div>
+        <br />
+    </div>
+
+    <table class="table panel table-striped">
+        <tr>
+            <th>
+                @Html.ActionLink("Section", "NavigationItems", new { sortOrder = ViewBag.SectionSortParm })
+            </th>
+            <th>
+                @Html.ActionLink("Display Text", "NavigationItems", new { sortOrder = ViewBag.DisplayTextSortParm })
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Sort Order
+            </th>
+            <th>
+                @Html.ActionLink("Active", "NavigationItems", new { sortOrder = ViewBag.IsActiveSortParm })
+            </th>
+            <th style="width: 165px;">
+                Actions
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td style="width: 15%;">
+                    @Html.DisplayFor(modelItem => item.ShSySection.Name)
+                </td>
+                <td style="width: 15%;">
+                    @Html.DisplayFor(modelItem => item.DisplayText)
+                </td>
+                <td style="width: 45%;">
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td style="text-align: center; width: 5%;">
+                    @Html.DisplayFor(modelItem => item.SortOrder)
+                </td>
+                <td style="width: 3%; text-align: center;">
+                    @Html.DisplayFor(modelItem => item.IsActive)
+                </td>
+                <td>
+                    @*<button style="font-family: 'Agency FB'; color: white" id="editModal" data-target="#edit" data-toggle="modal" data-id="@item.RecId" data-controller="@item.Controller" data-action="@item.Action" data-displaytext="@item.DisplayText" data-section="@item.FkShSySection" data-active="@item.IsActive"><span class="glyphicon glyphicon-edit"></span></button> |*@
+                    @Html.ActionLink(" ", "NavigationItemsEdit", new { id = item.RecId }, new { @class = "btn btn-info glyphicon glyphicon-edit", @title = "Edit Navigation Item" })
+                    @Html.ActionLink(" ", "NavigationItemsDetails", new { id = item.RecId }, new { @class = "btn btn-info glyphicon glyphicon-eye-open", @title = "View Details" })
+                    @*@Html.ActionLink(" ", "NavigationItemsDelete", new { id = item.RecId }, new { @class = "btn btn-danger glyphicon glyphicon-trash", @title = "Delete Navigation Item" })*@
+                </td>
+            </tr>
+        }
+    </table>
+    <div style="text-align: center;">
+        @Html.PagedListPager(Model, page => Url.Action("NavigationItems",
+    new { page }))
+    </div>
+</div>
+
+
+

@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "Resources";
+}
+<div class="photo-container img-responsive">
+    <img src="~/Content/Images/pic4.png" style=" max-height:330px; width:100%;border-radius:22px 22px; margin-top:-15px;" />
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <h2 id="headers"><strong>Resource Help</strong></h2>
+        <p id="p_text">
+            Below are link and pages on how these resources will help Adults, Teachers, Teen, and Youth with Trafficking.
+            These resources will hopefully provide a more in depth analysis of cyber security concerns and steps that may be taken
+            to ensure that you are able to remain safe while surfing the web.
+        </p>
+    </div>
+
+    <div class="col-md-4 align-center" id="borders">
+        <h3 id="headers_borders"><strong>Most Viewed Links</strong></h3>
+        <ul class="align-left" id="p_textborders">
+            <li><A HREF="http://www.ncadv.org/">NCADV Org</A></li>
+            <li><A HREF="https://polarisproject.org/">Polaris Project</A></li>
+            <li><A HREF="https://www.fbi.gov/investigate/civil-rights/human-trafficking"> FBI </A></li>
+        </ul>
+    </div>
+</div>
+
+<div class="col-md-12 well">
+    <h2 id="headers"><strong>Top Trafficking Resources</strong></h2>
+    <table class="table">
+
+        <thead>
+            <tr>
+                <th class="col-md-4">Title</th>
+                <th class="col-md-5">Description</th>
+                <th class="col-md-1">Date Uploaded</th>
+                <th class="col-md-1">Times Viewed</th>
+                <th class="col-md-1">Times Downloaded</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var t in ViewBag.files)
+            {
+                string title = t.Title;
+                <tr>
+                    <th scope="row">@Html.ActionLink(@title, "Show", "File", new { id = t.RecId }, null )</th>
+                    <td>
+                        @{
+                            if (t.Description.Length > 400)
+                            {
+                                @Html.Raw(HttpUtility.HtmlDecode(t.Description.Substring(0, 399) + "&hellip;"))
+                            }
+                            else
+                            {
+                                @Html.Raw(HttpUtility.HtmlDecode(t.Description))
+                            }
+                        }
+                    </td>
+                    <td>@t.DateUploaded.ToShortDateString()</td>
+                    <td>@t.ViewCount</td>
+                    <td>@t.DownloadCount</td>
+                </tr>
+                            }
+        </tbody>
+
+
+
+    </table>
+</div>

@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Teachers";
+}
+
+<div class="container-fluid" id="photo_cont" style="margin-bottom:3%;">
+    <div class="row">
+        <div class="col-md-12">
+            <figure class="effect-caged img-responsive">
+                <img src="~/Content/Images/teacher.jpg" style="width:100%;max-height:330px;" />
+            </figure>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <h1 id="headers" class="align-left">Cyber Security for Teachers</h1>
+        <p id="p_text">
+            This is a page where teachers and other educators can learn tips and read 
+            articles and also access useful links to help educate their students online. 
+        </p>
+
+    </div>
+    <div class="col-md-4 align-center " id="borders" style="min-height:150px;">
+        <h3 id="headers_borders">Teacher Page Links</h3>
+        <ul class="align-left" id="p_textborders">
+            <li><A HREF="http://www.cox.com/wcm/en/aboutus/datasheet/takecharge/2009-teen-survey.pdf">COX Communications Report</A></li>
+            <li><A HREF="http://www.innocentsatrisk.org">Innocents at Risk</A></li>
+            <li><A HREF="https://humantraffickinghotline.org">Human Trafficking Hotline</A></li>
+        </ul>
+    </div>
+</div>
+@{ Html.RenderAction("FileList", new { id = 15 }); }

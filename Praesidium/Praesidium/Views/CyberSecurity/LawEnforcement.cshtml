@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "LawEnforcement";
+}
+
+<div class="row">
+    <img src="~/Content/Images/cyber-crime.jpg" style="width: 100%; border-radius:22px 22px 22px 22px;max-height:400px;" class="img-responsive" />
+    <div class="col-md-10">
+        <h2 id="headers"><strong>Law Enforcement's Role in Cyber Security</strong></h2>
+        <p id="p_text">
+           Law Enforment plays a very large and important role in the protection of children online. Law Enforment's main goal is education of the general public 
+            and their main way of doing this is by doing talks in schools and at kids clubs. They also provide resources like websites, fourms and other informational 
+            resources for parents and children alike.
+        </p>
+      
+        
+    </div>
+</div>
+
+<div class="col-md-10 well" >
+    <p class="h2" id="headers"><strong>Resources for Cyber Security Laws and Legislation</strong></p><br />
+    <div class="col-md-10 centered">
+        <ul id="p_text">
+            <li><a href="http://www.mass.gov/anf/research-and-tech/cyber-security/cyber-security-laws/federal-cyber-security-laws.html">Federal Cyber Security Laws</a></li>
+            <li><a href="http://www.cox.com/wcm/en/aboutus/datasheet/takecharge/2009-teen-survey.pdf">COX Communications Report on Teen Online Saftey</a></li>
+            <li><a href="https://polarisproject.org/">Polaris Project Website.</a></li>
+            <center>@Html.ActionLink("Law Enforcement Quiz", "Quiz", new { quizId = 3 }, new { @class = "btn btn-info", @title = "" })  </center>
+          
+            
+        </ul>
+
+    </div>
+</div>
+@{ Html.RenderAction("FileList", new { id = 16 }); }

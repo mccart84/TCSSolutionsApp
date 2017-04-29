@@ -1,0 +1,47 @@
+﻿@model Praesidium.Models.Navigation.NavigationModel
+
+@if (Model != null)
+{
+    if (Model.NavItems != null)
+    {
+        foreach (var navItem in Model.NavItems)
+        {
+            if (navItem.SubPages.Count > 0)
+            {
+           
+                    <li class="dropdown">
+                        @*@Html.ActionLink("" + navItem.DisplayText + "<b class='caret'></b>" , navItem.Action, navItem.Controller, new Dictionary<string, object> { { "class", "dropdown-toggle" }, { "data-toggle", "dropdown" } })*@
+                        <a class="dropdown_btn" data-toggle="dropdown" href="#">
+                            @navItem.Section
+                            <span class="caret" aria-hidden="true"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            <li id="dropdown_home">@Html.ActionLink(navItem.DisplayText, navItem.Action, navItem.Controller)</li>
+
+                            @foreach (var subNav in navItem.SubPages)
+                            {
+                                <li style="font-weight: bold !important;">@Html.ActionLink(subNav.DisplayText, subNav.Action, subNav.Controller)</li>
+                            }
+                        </ul>
+                    </li>
+                    }
+                    else
+                    {
+                    <li>
+                        @Html.ActionLink(navItem.DisplayText, navItem.Action, navItem.Controller)
+                    </li>
+             
+            }
+        }
+    }
+    else if (Model.AdminNavItems != null)
+    {
+        foreach (var adminNavItem in Model.AdminNavItems)
+        {
+            <li>
+                @Html.ActionLink(adminNavItem.DisplayText, adminNavItem.Action, adminNavItem.Controller, new { area = "" }, new { @class = "header" })
+            </li>
+        }
+    }
+}

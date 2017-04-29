@@ -1,0 +1,30 @@
+﻿@using System.Text.RegularExpressions
+@using Microsoft.Ajax.Utilities
+@model IEnumerable<Praesidium.Models.SearchResult>
+@{
+    ViewBag.Title = "Search";
+    if (String.IsNullOrEmpty(ViewBag.SearchString))
+    {
+        <h2>Search Results</h2>
+        <p>You did not search for anything.</p>
+    }
+    else
+    {
+        <h2>Search Results</h2>
+
+        <p>Your search for "@ViewBag.SearchString" resulted in @Model.Count() records that matched your search criteria.</p>
+
+                <table class="table">
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.ActionLink(@item.Title, "Show", "File", new { id = item.RecId }, null) - @Html.Raw(HttpUtility.HtmlDecode(Regex.Replace(item.Description, "<[^>]*(>|$)", string.Empty))) - Uploaded on @item.DateUploaded.ToShortDateString()
+                            </td>
+                        </tr>
+                        }
+
+                </table>
+    }
+}
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="77117141d02643c68201bd3ba544226b" Name="Diagram1">
+        <EntityTypeShape EntityType="AdminModel.ShSyNavigationItem" Width="1.5" PointX="3" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdminModel.ShSySection" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdminModel.ShUser" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdminModel.ShUserType" Width="2.75" PointX="1.5" PointY="13.5" IsExpanded="true" />
+        <AssociationConnector Association="AdminModel.FK_ShSyNavigationItem_ShSySection" ManuallyRouted="false" />
+        <AssociationConnector Association="AdminModel.FK_ShUser_ShUserType" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="AdminModel.ShFile" Width="1.5" PointX="3" PointY="2.5" />
+        <EntityTypeShape EntityType="AdminModel.ShFileKeyword" Width="1.5" PointX="5.25" PointY="3.375" />
+        <AssociationConnector Association="AdminModel.FK__ShFile__FkShSySe__5070F446" />
+        <AssociationConnector Association="AdminModel.FK__ShFile__Modified__52593CB8" />
+        <AssociationConnector Association="AdminModel.FK__ShFile__Uploaded__5165187F" />
+        <AssociationConnector Association="AdminModel.FK__ShFileKey__FkShF__5535A963" />
+        <EntityTypeShape EntityType="AdminModel.FileView" Width="1.5" PointX="5.375" PointY="6.75" />
+        <EntityTypeShape EntityType="AdminModel.ShRfUserTypeAccess" Width="2.75" PointX="7.5" PointY="16.375" />
+        <EntityTypeShape EntityType="AdminModel.ShSyPermissionLevel" Width="1.5" PointX="5.25" PointY="14.625" />
+        <AssociationConnector Association="AdminModel.FK_ShRfUserTypeAccess_ShSyPermissionLevels" />
+        <AssociationConnector Association="AdminModel.FK_ShRfUserTypeAccess_ShUserType" />
+        <EntityTypeShape EntityType="AdminModel.ShSySecurityItem" Width="1.5" PointX="7.375" PointY="0.875" />
+        <AssociationConnector Association="AdminModel.FK_ShRfUserTypeAccess_ShSySecurityItems" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

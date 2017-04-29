@@ -1,0 +1,110 @@
+﻿@using Praesidium.DAL
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+
+
+
+            <img src="~/Content/Images/trafficking.png" id="carousel_img" />
+            <div class="carousel-caption">
+
+                <p id="carousel_btn">
+                    <a href="http://praesidium-beta.azurewebsites.net/Trafficking" class="btn btn-info btn-group-lg">Read More</a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+
+
+            <img src="~/Content/Images/Cyber Final.png" id="carousel_img" />
+            <div class="carousel-caption">
+
+                <p id="carousel_btn"><a href="http://praesidium-beta.azurewebsites.net/CyberSecurity " class="btn btn-info btn-group-lg">Read More</a></p>
+            </div>
+        </div>
+        <div class="item">
+
+
+            <img src="~/Content/Images/Life is about finding people who are your kind of crazy! (5).png" id="carousel_img" />
+            <div class="carousel-caption">
+
+                <p id="carousel_btn"><a href="http://praesidium-beta.azurewebsites.net/Home/About " class="btn btn-info btn-group-lg">Read More</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div> <!-- Carousel -->
+
+<h1 style="text-align: center;">News and Articles</h1>
+<div class="row" id="borders">
+    <div class="col-md-6">
+
+        <h2 style="text-align: center;">Recent News</h2>
+        <ul class="align-left noleaders">
+            <li><span>Human Trafficking Confrence April 5th and 6th at University Center.</span><span><a href="http://promotemichigan.com/ferris-state-university-announces-conference-human-trafficking-awareness-april-5-6" class="btn btn-info btn-xs">View Link</a></span></li>
+            <li><span>"Warning Lights" to bring awareness to human trafficking.</span><span><A HREF="http://ferris.edu/business/news/warning-lights-for-human-trafficking/" class="btn btn-info btn-xs">View Link</A></span></li>
+            <li><span>Human trafficking growing problem in Atlanta.</span><span><A HREF="http://www.fox5atlanta.com/news/241695965-story" class="btn btn-info btn-xs">View Link</A></span></li>
+            <li><span>Task force cracks down on child exploitation in Atlantic City.</span><span><A HREF="http://philadelphia.cbslocal.com/2017/03/10/local-child-predator-task-force-working-hard-to-fight-human-trafficking-in-area/" class="btn btn-info btn-xs">View Link</A></span></li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <h2 style="text-align: center;">Recently Added Articles</h2>
+        <ul class="align-left noleaders">
+            @foreach (var t in ViewBag.newFiles)
+            {
+                <li>
+                    <span>
+                        @t.Title
+                    </span>
+                    <span>
+                        @Html.ActionLink("View File", "Show", "File", new { id = t.RecId }, new { @class = "btn btn-info btn-xs" })
+                    </span>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+<h1 style="text-align: center;">Resources</h1>
+<div class="row" id="borders">
+    <div class="col-md-6">
+        <h2 style="text-align: center;">Government Resources</h2>
+        <ul class="align-left noleaders">
+            <li><span>Trafficking in Persons Report 2013</span><span><A HREF="https://www.state.gov/j/tip/rls/tiprpt/2013/index.htm" class="btn btn-info btn-xs">View Link</A></span></li>
+            <li><span>What is Human Trafficking - DHS</span><span><A HREF="https://www.dhs.gov/blue-campaign/what-human-trafficking" class="btn btn-info btn-xs">View Link</A></span></li>
+            <li><span>FBI Bulletin on Human Sex Trafficking</span><span><A HREF="https://leb.fbi.gov/2011/march/human-sex-trafficking" class="btn btn-info btn-xs">View Link</A></span></li>
+            <li><span>Federal Human Trafficking Strategic Plan</span><span><A HREF="https://www.ovc.gov/pubs/FederalHumanTraffickingStrategicPlan.pdf" class="btn btn-info btn-xs">View Link</A></span></li>
+            <li><span>Office on trafficking in persons hompage</span><span><A HREF="https://www.acf.hhs.gov/otip" class="btn btn-info btn-xs">View Link</A></span></li>
+
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <h2 style="text-align: center;">General Resources</h2>
+        <ul class="align-left noleaders">
+            <li><span>Polaris Project Site</span><span><A HREF="https://polarisproject.org" class="btn btn-info btn-xs">View Link</A></span></li>
+            <li><span>Human Trafficking Hotline Site</span><span><A HREF="https://humantraffickinghotline.org" class="btn btn-info btn-xs">View Link</A></span></li>
+            <li><span>Missing Kids Site</span><span><A HREF="http://www.missingkids.com/home" class="btn btn-info btn-xs">View Link</A></span></li>
+            <li><span>Essay on Human Trafficking</span><span><A HREF="http://www.micatholic.org/advocacy/focus-essay/2014/focus-20140201-HumanTrafficking.pdf" class="btn btn-info btn-xs">View Link</A></span></li>
+
+
+        </ul>
+    </div>
+</div>
